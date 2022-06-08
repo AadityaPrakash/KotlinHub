@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">KotlinHub</string>
+
+    <!-- Bottom Menu Items  -->
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="more">More</string>
+
+
+
+
+
 </resources>

@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "190374737070",
+    "firebase_url": "https://codehub-d0c60-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "codehub-d0c60",
+    "storage_bucket": "codehub-d0c60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190374737070:android:59c7dcda50612579afa93f",
+        "android_client_info": {
+          "package_name": "com.aadi.codehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190374737070-bg1altr14ubnsk852src72905o89chv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxV4bTCrIqIjsxxFgiKx8j41r4EeWiOOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190374737070-bg1altr14ubnsk852src72905o89chv7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "190374737070-j8apa1e7ouate81al120ke8hh5pkpdhs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aadi.codehub"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190374737070:android:99563a5bb19ba9a2afa93f",
+        "android_client_info": {
+          "package_name": "com.example.kotlinhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190374737070-bg1altr14ubnsk852src72905o89chv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxV4bTCrIqIjsxxFgiKx8j41r4EeWiOOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190374737070-bg1altr14ubnsk852src72905o89chv7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "190374737070-j8apa1e7ouate81al120ke8hh5pkpdhs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aadi.codehub"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

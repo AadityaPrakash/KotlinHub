@@ -1,6 +1,7 @@
 package com.example.kotlinhub
 
 import android.app.Application
+import com.google.firebase.FirebaseApp
 
 class MainApp : Application() {
 
@@ -11,7 +12,8 @@ class MainApp : Application() {
     }
 
     private fun initApp() {
-        TODO("Not yet implemented")
+        FirebaseApp.initializeApp(this)
+        //TODO("Not yet implemented")
     }
 
 }
