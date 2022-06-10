@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.285" />
         <entry key="app/src/main/res/drawable/ic_compass.xml" value="0.177" />
         <entry key="app/src/main/res/drawable/ic_dashboard.xml" value="0.177" />
@@ -10,6 +11,7 @@
         <entry key="app/src/main/res/drawable/ic_profile.xml" value="0.177" />
         <entry key="app/src/main/res/drawable/ic_settings2.xml" value="0.177" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.29884847005208337" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.37552083333333336" />
         <entry key="app/src/main/res/layout/fragment_explore.xml" value="0.37552083333333336" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.37552083333333336" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.37552083333333336" />

@@ -1,13 +1,19 @@
 package com.example.kotlinhub
 
-import android.app.Activity
 import android.os.Bundle
 import android.util.Log
+import android.widget.PopupMenu
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.kotlinhub.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    //private lateinit var fragmentBinding: ActivityMainBinding
+    private lateinit var navController: NavController
+    private lateinit var binding: ActivityMainBinding
 
     companion object {
         const val TAG = "MainActivity"
@@ -15,8 +21,35 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         Log.d(TAG, "$TAG:onCreate")
+
+        try {
+            binding = ActivityMainBinding.inflate(layoutInflater)
+            setContentView(binding.root)
+
+            //val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+            //navController = navHostFragment.navController
+
+            navController = findNavController(R.id.nav_host_fragment)
+
+            setupActionBarWithNavController(navController)
+            setupSmoothBottomMenu()
+
+        } catch (e: Exception) {
+            Log.d(TAG, "Exception Found: $e")
+        }
+
+    }
+
+    private fun setupSmoothBottomMenu() {
+        val popupMenu = PopupMenu(this, null)
+        popupMenu.inflate(R.menu.bottom_navigation_menu)
+        val menu = popupMenu.menu
+        binding.bottomBar.setupWithNavController(menu, navController)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
     override fun onStart() {
@@ -37,5 +70,20 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         Log.d(TAG, "$TAG:onPause")
+    }
+
+    private var exitTime: Long = 0
+    private fun doExitApp() {
+        if((System.currentTimeMillis() - exitTime) > 2000) {
+            Toast.makeText(this, "Press again to exit app", Toast.LENGTH_SHORT).show()
+            exitTime = System.currentTimeMillis()
+        } else {
+            this.finish()
+        }
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 }
