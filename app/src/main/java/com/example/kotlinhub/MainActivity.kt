@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.kotlinhub.activities.KotlinCodes
 import com.example.kotlinhub.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,12 +24,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "$TAG:onCreate")
 
+        KotlinCodes.create()
+
         try {
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
 
             //val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
             //navController = navHostFragment.navController
+
+            val toolbar = binding.toolbarMain
+            setSupportActionBar(toolbar)
 
             navController = findNavController(R.id.nav_host_fragment)
 
